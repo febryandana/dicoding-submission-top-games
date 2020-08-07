@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Top Games</string>
+    <string name="tv_name">Nama Games</string>
+    <string name="tv_platform">Platform</string>
+    <string name="tv_detail_platform">Detail Platform</string>
+    <string name="tv_release_date">Release Date</string>
+    <string name="tv_detail_release_date">Detail Release</string>
+    <string name="tv_detail_game">Detail Game</string>
+    <string name="tv_score">Score</string>
+    <string name="tv_detail_score">Game Score</string>
+    <string name="img_game_poster">Game Poster</string>
+    <string name="tv_detail_summary">Summary :</string>
+    <string name="about_name">Moch. Febryandana Nurfahri</string>
+    <string name="about_email"><a href = "mailto: febryandana.fd@gmail.com">febryandana.fd@gmail.com</a></string>
+    <string name="about_credit">List Based on Metacritic Best Game of All Time</string>
+    <string name="menu_profile">Profile</string>
+</resources>

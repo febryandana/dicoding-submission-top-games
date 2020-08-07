@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:id="@+id/activity_detail">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/tv_name"/>
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/img_detail_poster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@android:color/darker_gray"
+                android:contentDescription="@string/img_game_poster" />
+        </FrameLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <TableRow
+                style="@style/TableSpec">
+
+                <TextView
+                    style="@style/TableValue"
+                    android:text="@string/tv_platform"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_platform"
+                    style="@style/TableValue"
+                    android:text="@string/tv_detail_platform"/>
+            </TableRow>
+            <TableRow
+                style="@style/TableSpec">
+
+                <TextView
+                    style="@style/TableValue"
+                    android:text="@string/tv_release_date"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_release"
+                    style="@style/TableValue"
+                    android:text="@string/tv_detail_release_date"/>
+            </TableRow>
+            <TableRow
+                style="@style/TableSpec">
+
+                <TextView
+                    style="@style/TableValue"
+                    android:text="@string/tv_score"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_score"
+                    style="@style/TableValue"
+                    android:text="@string/tv_detail_score"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tv_detail_summary"
+            android:textColor="#1E1E1E"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+                <TextView
+                    android:id="@+id/tv_detail_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="@string/tv_detail_game"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
